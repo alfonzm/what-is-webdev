@@ -71,7 +71,7 @@ export default {
     @apply tw-text-lg tw-leading-7
 
     h1, h2, h3, h4, h5, h6
-      @apply tw-mt-12 tw-mb-4 tw-font-bold tw-leading-tight
+      @apply tw-mt-16 tw-mb-4 tw-font-bold tw-leading-tight
 
     h3, h4, h5, h6
       @apply tw-mt-10

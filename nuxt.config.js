@@ -41,6 +41,7 @@ export default {
   */
   buildModules: [
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/moment',
   ],
   tailwindcss: {
     purgeCSSInDev: false,
