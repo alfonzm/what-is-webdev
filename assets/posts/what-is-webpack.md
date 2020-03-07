@@ -1,7 +1,7 @@
 ---
 title: What is Webpack?
 date: 2020-3-8 00:00:00 +0800
-cover: images/webpack.png
+cover: /images/webpack.png
 author: alfonzm
 --- 
 
@@ -96,7 +96,11 @@ You might want to move the `webpack` command into an npm script so you don't hav
 
 By default, Webpack can only read Javascript and JSON files. But with the help of **loaders**, Webpack can process other file extensions and use them in your Javascript modules.
 
-For example, you can use `raw-loader` to read the contents of .txt files and use them in your Javascript code. To do that, you must install the [raw-loader](https://www.npmjs.com/package/raw-loader) module and use the following Webpack config:
+For example, you can use `raw-loader` to read the contents of .txt files and use them in your Javascript code.
+
+To do that, you must install the [raw-loader](https://www.npmjs.com/package/raw-loader) module to your package.
+
+Then, tell Webpack that "hey, whenever you see someone importing a txt file, I want you to use `raw-loader` to process it." Here's a sample webpack config for that:
 
 ```js
 // webpack.config.js
@@ -112,7 +116,7 @@ module.exports = {
 };
 ```
 
-The `rules` section tells Webpack that whenever a JS file requires a .txt file, it will use the `raw-loader` plugin to process it. That way we can do something like this:
+Now, we can do something like this:
 
 ```js
 // src/message.txt
