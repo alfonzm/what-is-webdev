@@ -19,8 +19,6 @@ export default {
 
 <style lang="sass">
 
-@import 'highlight.js/styles/agate.css'
-
 body
   @apply text-black
 
