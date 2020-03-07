@@ -20,7 +20,9 @@ ES6 is the 6th version of the ECMAScript standards. It was released on June 2015
 
 Most browsers can actually read ES6 syntax by now. Use [this page](https://caniuse.com/#feat=es6) for the full list.
 
-However, you'll still want to convert your ES6 code into something that can be read by older browsers. [Babel](https://babeljs.io/) is one tool that can do exactly that.
+However, you'll still want to convert your ES6 code into something that can be read by older browsers. Otherwise, your ES6 code will not work on incompatible browsers and your web app will break!
+
+[Babel](https://babeljs.io/) is one tool that can do exactly that.
 
 ## What are the new features in ES6?
 
@@ -156,5 +158,7 @@ const bob = new Person('Bob')
 ## Conclusion
 
 Whether you're writing back-end code with Node.js or front-end Javascript with popular frameworks such as React or Vue, learning ES6 is almost always a neccessity.
+
+It just makes writing Javascript code easier and more enjoyable!
 
 Got any questions or suggestions? Drop a comment below!

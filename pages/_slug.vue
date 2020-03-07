@@ -18,7 +18,7 @@ import moment from 'moment'
 export default {
   head() {
     return {
-      title: this.title,
+      title: `${this.title} – ${this.titleSuffix}`,
       meta: [
         { hid: 'description', name: 'description', content: `${this.excerpt || this.title}` }
       ],
@@ -35,6 +35,7 @@ export default {
       date: moment(date).format('MMM DD, YYYY'),
       body: html,
       author: config.authors[author],
+      titleSuffix: config.titleSuffix,
     }
   },
 }
