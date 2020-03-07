@@ -1,7 +1,7 @@
 ---
 title: What is "What is Web Dev"?
 date: 2020-3-6 00:00:00 +0800
-cover: images/workspace.jpg
+image: images/workspace.jpg
 author: alfonzm
 --- 
 

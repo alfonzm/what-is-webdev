@@ -94,7 +94,7 @@ export default {
       const path = require('path');
       return await fs.readdirSync('./assets/posts').map(file => {
         const filename = path.parse(file).name
-        return `/blog/${filename}`
+        return `/${filename}`
       })
     },
   },
